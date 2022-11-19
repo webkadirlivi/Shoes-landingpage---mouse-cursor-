@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    
+    
+  </head>
+  <body>
+    <div id="cursor"></div>
+    
+   <script type="text/javascript">
+       var cursor = document.getElementById('cursor');
+       document.addEventListener('mousemove'
+       , function(e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x  + 'px';
+        cursor.style.top = y + 'px';
+       })
+    </script>
+    <div class="circle"></div>
+    
+
+    <!-- HAMBURGER LINES -->
+        <div class="wrapper">
+            <div class="wrapper-container">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-brands fa-slack fa-2x"></i>&nbsp; <h1>LIVI</h1>
+            </div>
+            <div class="navbar-middle">
+                <a href="#"> <h3>ERKEK</h3></a>
+                <a href="#"> <h3>KADIN</h3></a>
+                <a href="#"> <h3>ÇOCUK</h3></a>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search">
+                <a href="#">
+                    <li class="fas fa-search"></li>
+                </a>
+            </div>
+
+            </nav>
+
+            <!-- HAMBURGER CONTENT -->
+                <div>
+                    <ul class="menu">
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="#">Alışveriş</a></li>
+                        <li><a href="#">Koleksiyonlar</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">SSS</a></li>
+                        <li><h6> Copyright © 2021 Tüm Hakları Saklıdır.  </h6></li>
+                        <li><i class="fa-brands fa-instagram"></i> &nbsp;
+                             <i class="fa-brands fa-twitter"></i> &nbsp; 
+                             <i class="fa-brands fa-facebook"></i> &nbsp;
+                             <i class="fa-brands fa-amazon"></i> &nbsp;  </li>
+                    </ul>
+                    
+                </div>
+
+                <!-- SECTION -->
+            <section class="content">
+                
+                <div class="text-box">
+                    <h3>LIVI</h3>
+                    <h1>LUPINEK FLYKNIT ACG</h1>
+                    <p>built to withstand the rigors of declining conditions, the
+                        Livi ACG Flyknit Lupinek combines Flykint, Flywire and 
+                        a water-resistance defender repellant system on the upper.
+                    </p>
+                    <a class="btn-posnawr" href="#">Buy Now<span></span></a>
+                </div>
+                
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="/images/shoes1.png" data-speed="-5" class="layer"></div>
+                          <div class="swiper-slide"><img src="/images/shoes2.png" data-speed="2" class="layer"></div>
+                          <div class="swiper-slide"><img src="/images/shoes3.png" data-speed="5" class="layer"></div>
+                          
+                        </div>
+                      </div>
+                
+            </section>
+
+        <script src="/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <!-- swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                  effect: "cards",
+                  grabCursor: true,
+                });
+              </script>
+
+              
+              
+  </body>
+</html>
